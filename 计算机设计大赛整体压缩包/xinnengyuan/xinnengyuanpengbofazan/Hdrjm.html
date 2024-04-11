@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新能源？蓬勃发展!</title>
+	<script src="echarts.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<link rel="stylesheet" href="css/comon0.css">
+    <style>
+        body{
+            /* 设置背景渐变 */
+            background-image: linear-gradient(to left,
+            #694720,#013f5f);
+            display: flex;
+            justify-content: center;
+        }
+        .a{
+            position:relative;
+            top: 100px;
+            width: 1100px;
+            height: 550px;
+            box-shadow: 0 5px 15px rgba(0,0,0,.8);
+            display: flex;
+        }
+        .b{
+            width: 800px;
+            height: 550px;
+            background-image: url("images/201515-158211451517f1.jpg");
+            /* 让图片适应大小 */
+            background-size: cover;
+        }
+        .c{
+            width: 300px;
+            height: 550px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .d{
+            width: 250px;
+            height: 500px;
+        }
+        .d h1{
+            font: 900 30px '';
+        }
+        .e{
+            width: 230px;
+            margin: 20px 0;
+            outline: none;
+            border: 0;
+            padding: 10px;
+            border-bottom: 3px solid rgb(80,80,170);
+            font: 900 16px '';
+        }
+        .f{
+            float: right;
+            margin: 10px 0;
+        }
+		.ff{
+		    float: left;
+		    margin: 10px 0;
+		}
+        .g{
+	position: absolute;
+	margin: 20px;
+	bottom: 40px;
+	display: block;
+	width: 200px;
+	height: 60px;
+	font: 900 30px '';
+	text-decoration: none;
+	line-height: 50px;
+	border-radius: 30px;
+	background-image: linear-gradient(to left,
+            #00355d,#2188cf);
+	text-align: center;
+	color: #FFF;
+        }
+    </style>
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+			$(document).ready(function(){
+				$("#btnLogin").click(function(){
+					
+				$.ajax({ 
+						 type:"post",
+						 url:"http://localhost:81/webapi/default/Login",
+						 //url:"http://10.150.10.164:82/webapi/default/login",
+						 contentType:"application/json",
+						 data:JSON.stringify({Acc:$("#username").val(),Pwd:$("#password").val()}),
+						 dataType:"text",
+						 success:function(msg){
+							 if(msg=='"True"')
+							 {
+								 window.location.href = "dashujukeshihuayemianmoban/index.html";
+							 }
+							 else
+							 {
+								 document.getElementById("d").innerHTML="账号或密码错误";
+							 }
+						 }
+						 });
+				})
+				
+			})
+			
+		
+		
+	</script>
+</head>
+<body>
+    <div class="a">
+        <div class="b"></div>
+        <div class="c">
+            <div class="d">
+                <h1>登陆</h1>
+                <input type="text" class="e" placeholder="账号" id="username">
+                <input type="password" class="e" placeholder="密码" id="password">
+                
+				
+				<input type="button" id="btnClear" value="忘记密码" onclick="doClear()"  class="f"/>
+				<div id="d" style="text-align: center;color: red;" class="ff"></div>
+                <input type="button" value="登录" id="btnLogin" class="g">
+            </div>
+        </div>
+    </div>
+			
+	<script type="text/javascript">
+				let accountAll = [{ // 存储账户json数据的数组
+						username: 123,
+						passwd: 'qwe'
+					},
+					{
+						username: 456,
+						passwd: 'asd'
+					},
+					{
+						username: 789,
+						passwd: 'zxc'
+					}
+				]
+				function login()
+				{
+					if(document.getElementById('username').value=="123" && document.getElementById('password').value=="qwe")
+					{
+						window.location.href = "dashujukeshihuayemianmoban/index.html";
+					}
+					else
+					{
+						document.getElementById("d").innerHTML="账号或密码错误";
+					}
+				}
+				
+				
+				function login_bak() { //登陆判断
+					let username = document.getElementById('username').value;
+					let passwd = document.getElementById('passwd').value;
+					let account = accountAll.filter(function(e) {
+						return e.username == username
+					})[0]; // 筛选账号返回数组，不存在则返回空数组
+					if (!account) {
+						alert('账户不存在');
+					} else {
+						if (account.username == username && account.passwd == passwd) {
+							alert('登陆成功');
+						} else {
+							alert('密码错误');
+						}
+					}
+				}
+				function doClear() { //获取页面所有的input框，是text和password框，内容=空串
+					let inputs = document.getElementsByTagName("input");
+					for (let i = 0; i < inputs.length; i++) {
+						if (inputs[i].type == 'text' || inputs[i].type == 'password') {
+							inputs[i].value = '';
+						}
+					}
+				}
+				//给清除按钮增加onclick事件
+				let btnClear = document.getElementById('btnClear');
+				btnClear.addEventListener('click', function() {
+					doClear();
+				});
+			</script>
+	<script src="https://myhkw.cn/player/js/jquery.min.js" type="text/javascript"></script>
+		<script src="https://myhkw.cn/api/player/168181694237" id="myhk" key="168181694237" m="1"></script>
+</body>
+</html>

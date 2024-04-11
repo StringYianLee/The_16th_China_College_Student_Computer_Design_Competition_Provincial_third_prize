@@ -1,0 +1,316 @@
+/* Normal desktop :1200px. */
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+.icon-box {
+	padding: 15px;
+}
+
+}
+
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+.header-social {
+	left: 1%;
+}
+.breadcrumb-area {
+	min-height: 400px;
+}
+.breadcrumb-content .breadcrumb-title h2 {
+	font-size: 55px;
+}
+.main-menu ul li {
+	margin-right: 28px;
+}
+.feature-content h3 {
+	font-size: 20px;
+}
+.about-left-list h3 {
+	font-size: 50px;
+	top: 7px;
+}
+.about-left-list {
+	padding-left: 65px;
+}
+.about-left-list span {
+	font-size: 14px;
+	padding-top: 8px;
+}
+.about-left-list.list-pl {
+	padding-left: 90px;
+}
+.about-content p {
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+.list-check li {
+	margin-bottom: 10px;
+}
+.section-title h2 {
+	font-size: 33px;
+	line-height: 37px;
+}
+.profolio-content {
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+.team-social a {
+	margin-right: 3px;
+}
+.single-testimonial p {
+	font-size: 16px;
+	line-height: 28px;
+}
+.blog-mata span {
+	margin-right: 10px;
+}
+.blog-content h3 {
+	font-size: 19px;
+	margin-bottom: 15px;
+}
+.footer-socail li a {
+	margin-right: 3px;
+}
+.footer-widget p {
+	padding-right: 0px;
+}
+.icon-box {
+	padding: 15px;
+}
+.contact-icon-text {
+	margin-left: 10px;
+}
+
+}
+
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+.breadcrumb-area {
+	min-height: 400px;
+}
+.breadcrumb-content .breadcrumb-title h2 {
+	font-size: 50px;
+}
+.about-left-list {
+	padding-left: 90px;
+}
+.breadcrumb-area {
+	min-height: 400px;
+}
+.about-left-list span {
+	max-width: 90px;
+}
+.about-left-list.list-pl {
+	padding-left: 120px;
+}
+.about-left-before::before {
+	right: 0px;
+}
+.cta-content h2 {
+	font-size: 40px;
+	line-height: 46px;
+}
+.profolio-content {
+	padding-bottom: 15px;
+}
+.section-title h2 {
+	font-size: 30px;
+	line-height: 35px;
+}
+.single-testimonial {
+	padding: 60px 25px;
+}
+.testimonial-header h3 {
+	font-size: 25px;
+}
+.single-testimonial p {
+	font-size: 16px;
+	line-height: 26px;
+}
+.blog-content h3 {
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+.pl-30 {
+	padding-left: 0;
+}
+.copy-right p {
+	font-size: 14px;
+}
+.widgets-blog-img-content {
+	margin-bottom: 45px;
+}
+.comment-reply-box {
+	margin-left: 0;
+}
+.comment-form-cookies label {
+	font-size: 14px;
+}
+.error-content img {
+	width: 100%;
+}
+
+
+
+}
+
+ 
+/* small mobile :320px. */
+@media (max-width: 767px) {
+.breadcrumb-area {
+	min-height: 400px;
+}
+.breadcrumb-content .breadcrumb-title h2 {
+	font-size: 40px;
+}
+.slider-content {
+	padding-top: 200px;
+	padding-bottom: 150px;
+}
+.slider-content h2 {
+	font-size: 40px;
+	line-height: 46px;
+	margin-bottom: 15px;
+}
+.slider-content p {
+	font-size: 16px;
+	line-height: 23px;
+}
+.feature-box {
+	display: block !important;
+	text-align: center;
+}
+.feature-icon {
+	margin-bottom: 10px;
+}
+.about-left-before::before {
+	display: none;
+}
+.about-footer {
+	text-align: center;
+}
+.about-left-list {
+	padding-left: 0;
+}
+.about-left-list h3 {
+	position: unset;
+	font-size: 50px;
+}
+.about-left-list.list-pl {
+	padding-left: 0;
+}
+.about-left-list span {
+	font-size: 14px;
+	max-width: 130px;
+}
+.section-title h2 {
+	font-size: 30px;
+	line-height: 30px;
+}
+.cta-content h2 {
+	font-size: 35px;
+	padding-bottom: 30px;
+	line-height: 44px;
+}
+.team-btn {
+	margin-bottom: 30px;
+	justify-content: start !important;
+}
+.single-testimonial {
+	padding: 40px 15px;
+	text-align: left;
+}
+.testimonial-header h3 {
+	font-size: 20px;
+}
+.testimonial-header {
+	text-align: left;
+}
+.single-testimonial p {
+	font-size: 16px;
+	line-height: 26px;
+}
+.view-button {
+	margin-top: 15px;
+}
+.pl-30 {
+	padding-left: 15px;
+}
+.footer-bottom-menu {
+	display: none;
+}
+.video-button {
+	margin-left: 0;
+}
+.blog-mata span {
+	margin-right: 20px;
+}
+.blog-content h3 {
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+.overview-inner {
+	padding: 25px;
+	text-align: center;
+}
+.copy-right p {
+	text-align: center;
+}
+.blog-details-content h3 {
+	font-size: 22px;
+}
+.comment-box p {
+	font-size: 16px;
+	line-height: 25px;
+}
+.comment-reply-box {
+	margin-left: 0px;
+}
+.blog-details-content-shares ul li {
+	margin-top: 15px;
+}
+.comment-form-cookies label {
+	font-size: 14px;
+}
+.blog-mata span {
+	margin-bottom: 5px;
+}
+.icon-box {
+	padding: 15px;
+}
+.contact-icon-text h3 {
+	font-size: 22px;
+}
+.contact-icon-text {
+	margin-left: 10px;
+}
+.contact-icon-text p {
+	font-size: 14px;
+}
+.contact-form-box {
+	padding: 25px;
+}
+.error-content img {
+	width: 100%;
+}
+.profolio-content {
+	padding-bottom: 15px;
+}
+
+
+}
+ 
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+.breadcrumb-area {
+	min-height: 400px;
+}
+.breadcrumb-content .breadcrumb-title h2 {
+	font-size: 45px;
+}
+
+
+
+}
